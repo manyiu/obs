@@ -1,0 +1,57 @@
+/*
+Apply this css to your Youtube Gaming chat room.
+You can get the link of your chat room by "popout" your chat room.
+The link should be similar to this:
+https://www.youtube.com/live_chat?v=YOUR_CHATROOM_ID&is_popout=1&from_gaming=1&dark_theme=1
+If you are not using dark theme, you need to change the .dark class to your theme name.
+*/
+
+/* Background Color */
+body, .live-chat-page {
+	background: transparent !important;
+}
+
+/* Widget Color */
+.live-chat-widget.dark {
+	background: transparent !important;
+}
+
+/* Commenters' Name */
+.live-chat-widget .byline a {
+	color: yellow !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+	font-size: 1.6em;
+	font-weight: 1000;
+}
+
+/* Comments Text */
+.live-chat-widget.dark .comment-text {
+	color: inherit !important;
+	font-size: 1.6em;
+	font-weight: 1000;
+}
+
+/* Comments */
+.live-chat-widget.dark .comment {
+	color: green;
+	background-color: transparent !important;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.live-chat-widget.dark .comment:nth-of-type(2n) {
+	background-color: transparent !important;
+}
+
+/* Live chat widget border*/
+.live-chat-widget.dark #comments-scroller, .live-chat-widget.dark .yt-uix-form-input-textarea:not(:focus) {
+	border-color: transparent !important;
+}
+
+/* Hide Sign in*/
+#live-comments-controls {
+	display: none;
+}
+
+/* Hide Scroll-bar */
+#comments-scroller {
+	overflow: hidden;
+}
